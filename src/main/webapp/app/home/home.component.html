@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="display-4" jhiTranslate="home.title" align="center">Welcome, Java Hipster!</h1>
+        <h2 class="lead" jhiTranslate="home.subtitle" align="center">This is your homepage</h2>
+
+        <div [ngSwitch]="isAuthenticated()">
+            <div align="center" *ngSwitchCase="false">
+                <img src="../../content/images/sentiment2.png">
+            </div>
+
+            <div align="center" *ngSwitchCase="false">
+                <h3 jhiTranslate="home.login">Please log in to start using our service.</h3>
+                <button class="button" (click)="login()"><span>Sentiment.It </span></button>
+            </div>
+
+            <div align="center" *ngSwitchCase="true">
+                <h3>Select the service to collect sentiment data from.</h3>
+            </div>
+            <div class="row" align="center" *ngSwitchCase="true">
+                <div class="column">
+                    <img src="../../content/images/twitter-logo.png">
+                    <button class="button" (click)="login()"><span>Twitter </span></button>
+                </div>
+                <div class="column">
+                    <img src="../../content/images/reddit-logo.png">
+                    <button class="button" (click)="login()"><span>Reddit </span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+    "home": {
+        "title": "Bienvenue chez Sentiment.It!",
+        "subtitle": "Votre guichet unique pour obtenir un aperçu sentimental.",
+        "login": "Veuillez vous connecter pour utiliser notre service.",
+        "logged": {
+            "message": "Vous êtes connecté en tant que \"{{username}}\"."
+        },
+        "question": "Si vous avez des questions à propos de JHipster :",
+        "link": {
+            "homepage": "Page d'accueil de JHipster",
+            "stackoverflow": "JHipster sur Stack Overflow",
+            "bugtracker": "JHipster bug tracker",
+            "chat": "JHipster public chat room",
+            "follow": "Suivez @java_hipster sur Twitter"
+        },
+        "like": "Si vous aimez JHipster, donnez nous une étoile sur",
+        "github": "GitHub "
+    }
+}
