@@ -18,6 +18,8 @@ import { SentimentWebAppAccountModule } from './account/account.module';
 import { SentimentWebAppEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
+import { TwitterComponent } from './twitter/twitter.component';
+import { RedditComponent } from './reddit/reddit.component';
 
 @NgModule({
     imports: [
@@ -31,7 +33,16 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         SentimentWebAppEntityModule
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
-    declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+    declarations: [
+        JhiMainComponent,
+        NavbarComponent,
+        ErrorComponent,
+        PageRibbonComponent,
+        ActiveMenuDirective,
+        FooterComponent,
+        TwitterComponent,
+        RedditComponent
+    ],
     providers: [
         {
             provide: HTTP_INTERCEPTORS,
