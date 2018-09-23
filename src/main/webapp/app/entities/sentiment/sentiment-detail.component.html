@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="sentiment">
+            <h2><span jhiTranslate="sentimentWebApp.sentiment.detail.title">Sentiment</span> {{sentiment.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="sentimentWebApp.sentiment.keyword">Keyword</span></dt>
+                <dd>
+                    <span>{{sentiment.keyword}}</span>
+                </dd>
+                <dt><span jhiTranslate="sentimentWebApp.sentiment.sentiment">Sentiment</span></dt>
+                <dd>
+                    <span>{{sentiment.sentiment}}</span>
+                </dd>
+                <dt><span jhiTranslate="sentimentWebApp.sentiment.platform">Platform</span></dt>
+                <dd>
+                    <span>{{sentiment.platform}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/sentiment', sentiment.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

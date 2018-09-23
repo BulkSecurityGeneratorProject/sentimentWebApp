@@ -1,0 +1,24 @@
+
+{
+    "sentimentWebApp": {
+        "sentiment" : {
+            "home": {
+                "title": "Sentiments",
+                "createLabel": "Create a new Sentiment",
+                "createOrEditLabel": "Create or edit a Sentiment"
+            },
+            "created": "A new Sentiment is created with identifier {{ param }}",
+            "updated": "A Sentiment is updated with identifier {{ param }}",
+            "deleted": "A Sentiment is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Sentiment {{ id }}?"
+            },
+            "detail": {
+                "title": "Sentiment"
+            },
+            "keyword": "Keyword",
+            "sentiment": "Sentiment",
+            "platform": "Platform"
+        }
+    }
+}

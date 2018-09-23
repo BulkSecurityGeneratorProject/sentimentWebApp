@@ -1,0 +1,24 @@
+
+{
+    "sentimentWebApp": {
+        "sentiment" : {
+            "home": {
+                "title": "Sentiments",
+                "createLabel": "Créer un nouveau Sentiment",
+                "createOrEditLabel": "Créer ou éditer un Sentiment"
+            },
+            "created": "Un nouveau Sentiment a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Sentiment avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Sentiment avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Sentiment {{ id }} ?"
+            },
+            "detail": {
+                "title": "Sentiment"
+            },
+            "keyword": "Keyword",
+            "sentiment": "Sentiment",
+            "platform": "Platform"
+        }
+    }
+}
