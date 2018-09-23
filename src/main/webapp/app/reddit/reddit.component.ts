@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'jhi-reddit',
     templateUrl: './reddit.component.html',
-    styles: []
+    styles: ['reddit.scss']
 })
 export class RedditComponent implements OnInit {
     constructor() {}

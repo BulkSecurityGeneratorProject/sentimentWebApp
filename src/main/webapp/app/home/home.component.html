@@ -16,14 +16,29 @@
             <div align="center" *ngSwitchCase="true">
                 <h3>Select the service to collect sentiment data from.</h3>
             </div>
-            <div class="row" align="center" *ngSwitchCase="true">
-                <div class="column">
+
+            <div class="row" *ngSwitchCase="true">
+                <div class="column" align="center">
                     <img src="../../content/images/twitter-logo.png">
-                    <button class="button" routerLink="/twitter" routerLinkActive="active"><span>Twitter </span></button>
+                    <div class="container">
+                        <div class="container__item">
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Your Keyword" />
+                                <button type="button" class="btn btn--primary btn--inside uppercase">Analyze</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
+                <div class="column" align="center">
                     <img src="../../content/images/reddit-logo.png">
-                    <button class="button"  routerLink="/reddit" routerLinkActive="active"><span>Reddit </span></button>
+                    <div class="container">
+                        <div class="container__item">
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Your Keyword" />
+                                <button type="button" class="btn btn--primary btn--inside uppercase">Analyze</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
