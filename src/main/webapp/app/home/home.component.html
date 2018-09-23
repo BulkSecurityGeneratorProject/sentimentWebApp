@@ -23,8 +23,8 @@
                     <div class="container">
                         <div class="container__item">
                             <form class="form">
-                                <input type="email" class="form__field" placeholder="Your Keyword" />
-                                <button type="button" class="btn btn--primary btn--inside uppercase">Analyze</button>
+                                <input type="email" id="twitterKey" class="form__field" placeholder="Your Keyword" />
+                                <button type="button" class="btn btn--primary btn--inside uppercase" onClick="javascript: window.open('https://13unyx62q3.execute-api.us-east-1.amazonaws.com/deploy/topic?keyword=' + document.getElementById('twitterKey').value);">Analyze</button>
                             </form>
                         </div>
                     </div>
